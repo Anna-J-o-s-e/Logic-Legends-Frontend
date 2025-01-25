@@ -1,0 +1,92 @@
+/* ViewCampaigns.css */
+
+/* Page container */
+.view-campaigns {
+    background-color: #f4f7fc;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Center heading */
+  .view-campaigns h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green color for eco-friendly theme */
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+ /* Container for the table */
+.container {
+    margin-top: 50px;  /* Increased top margin */
+    padding: 20px;     /* Added padding around the container */
+  }
+  
+  
+  /* Table styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table td {
+    background-color: #fff;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the "No Image" text */
+  .table td img + span {
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Adding some padding to the table row */
+  .table tr {
+    padding: 10px 0;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .view-campaigns h1 {
+      font-size: 1.8rem;
+    }
+  
+    .table th, .table td {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .table img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+  

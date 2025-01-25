@@ -1,0 +1,165 @@
+/* AdminDashboard.css */
+
+/* Apply styles only to elements inside .admin-dashboard */
+.admin-dashboard {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #58a44a, #4c8f45); /* Green gradient */
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url('https://www.transparenttextures.com/patterns/leaf.png'), url('https://www.transparenttextures.com/patterns/wood-scraps.png'); /* Leaf and wood patterns */
+}
+
+.admin-dashboard h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #0a5f1a;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.admin-dashboard h1::before {
+    position: absolute;
+    left: -60px;
+    top: -15px;
+    width: 50px;
+}
+
+.admin-dashboard .carbon-footprint {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-scraps.png'); /* Wood texture */
+    background-size: cover;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.admin-dashboard .carbon-footprint:hover {
+    transform: translateY(-10px);
+}
+
+.admin-dashboard .carbon-footprint h3 {
+    font-size: 2rem;
+    color: #2f7a4b; /* Dark green */
+    margin-bottom: 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.admin-dashboard .carbon-footprint h3::after {
+    content: url('https://img.icons8.com/ios-filled/50/000000/tree.png'); /* Small tree icon */
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.admin-dashboard .carbon-footprint form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.admin-dashboard .carbon-footprint label {
+    font-size: 1.1rem;
+    color: #4e4e4e;
+    text-align: left;
+    width: 80%;
+}
+
+.admin-dashboard .carbon-footprint input {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #88d2a5; /* Soft green border */
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.admin-dashboard .carbon-footprint input:focus {
+    border-color: #56ab2f; /* Strong green on focus */
+}
+
+.admin-dashboard .carbon-footprint button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #56ab2f; /* Nature green */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.admin-dashboard .carbon-footprint button:hover {
+    background-color: #3f8e24; /* Darker green on hover */
+    transform: translateY(-4px);
+}
+
+.admin-dashboard .carbon-footprint button::before {
+    content: url('https://img.icons8.com/ios-filled/50/000000/leaf.png'); /* Leaf icon */
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.admin-dashboard .result {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2e8b57; /* Sea green */
+    padding: 10px;
+    background-color: rgba(46, 139, 87, 0.1); /* Light sea green */
+    border-radius: 8px;
+    position: relative;
+}
+
+.admin-dashboard .result p {
+    font-size: 1.6rem;
+    color: #2f4f4f; /* Dark slate gray for text */
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.admin-dashboard .result::before {
+    content: url('https://img.icons8.com/ios-filled/50/000000/forest.png'); /* Small forest icon */
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .admin-dashboard h1 {
+        font-size: 2.5rem;
+    }
+
+    .admin-dashboard .carbon-footprint {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .admin-dashboard .carbon-footprint input,
+    .admin-dashboard .carbon-footprint button {
+        width: 90%;
+    }
+}

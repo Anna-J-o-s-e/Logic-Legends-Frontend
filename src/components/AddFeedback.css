@@ -1,0 +1,98 @@
+/* AddFeedback.css */
+
+/* Main wrapper for the feedback page */
+.add-feedback {
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px 0; /* Reduce the padding to make it smaller */
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the heading */
+.add-feedback h1 {
+    color: #2c3e50; /* Dark gray for the heading */
+    font-size: 28px; /* Smaller font size */
+    margin-bottom: 20px; /* Reduced bottom margin */
+    padding-top: 40px; /* Adjusted padding-top */
+    font-weight: bold;
+}
+
+/* Center the container */
+.add-feedback .container {
+    max-width: 750px; /* Reduced container width */
+    margin: 0 auto;
+}
+
+/* Row styling for the rating and comments */
+.add-feedback .row {
+    margin-top: 15px; /* Reduced margin-top */
+}
+
+/* Styling for rating inputs */
+.add-feedback .rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px; /* Reduced margin-bottom */
+}
+
+/* Style each rating star */
+.add-feedback .rating input {
+    display: none;
+}
+
+.add-feedback .rating label {
+    font-size: 24px; /* Reduced star size */
+    cursor: pointer;
+    color: #f1c40f; /* Gold color for the stars */
+    margin-right: 8px; /* Reduced margin between stars */
+}
+
+.add-feedback .rating input:checked ~ label {
+    color: #f39c12; /* Highlight selected stars */
+}
+
+/* Styling the comments textarea */
+.add-feedback .form-control {
+    padding: 8px; /* Reduced padding */
+    width: 100%;
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px; /* Reduced height */
+    margin-bottom: 15px; /* Reduced margin-bottom */
+}
+
+/* Button styling */
+.add-feedback .btn {
+    background-color: #40a318; /* Yellow background */
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    padding: 10px 20px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-feedback .btn:hover {
+    background-color: #1d181b; /* Darker orange on hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .add-feedback .container {
+        padding: 0 15px; /* Reduced padding */
+    }
+
+    .add-feedback .row g-3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .add-feedback .btn {
+        width: 100%;
+        padding: 12px; /* Adjusted button padding */
+    }
+
+    .add-feedback h1 {
+        font-size: 24px; /* Smaller heading size for mobile */
+    }
+}

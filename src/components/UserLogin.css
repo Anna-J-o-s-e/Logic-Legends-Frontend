@@ -1,0 +1,126 @@
+/* Apply only to the adminlogin and userlogin pages */
+.adminlogin .login-container,
+.userlogin .login-container {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  overflow: hidden; /* Prevent scrolling */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8f8f8, #d0e4e1); /* Soft gradient background */
+}
+
+.adminlogin .background-img,
+.userlogin .background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the full viewport */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.adminlogin .login-box,
+.userlogin .login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the login box */
+  width: 90%;
+  max-width: 500px; /* Set a maximum width for the form */
+  height: auto;
+  background: rgba(255, 255, 255, 0.85); /* Lighter background for readability */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 12px; /* Rounded corners */
+}
+
+.adminlogin .logo-img,
+.userlogin .logo-img {
+  width: 180px;
+  height: 140px;
+  margin-bottom: 30px;
+  object-fit: contain; /* Keep the logo proportional */
+}
+
+.adminlogin .login-form,
+.userlogin .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.adminlogin .form-input,
+.userlogin .form-input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #b36f48;
+  border-radius: 30px; /* Rounded inputs */
+  outline: none;
+  color: #b36f48;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  background-color: #fff9f1; /* Soft background for input fields */
+  transition: border-color 0.3s ease;
+}
+
+.adminlogin .form-input::placeholder,
+.userlogin .form-input::placeholder {
+  color: #b36f48;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.adminlogin .form-input:focus,
+.userlogin .form-input:focus {
+  border-color: #158422; /* Change border on focus */
+  background-color: #fff7e3; /* Light background change on focus */
+}
+
+.adminlogin .error-message,
+.userlogin .error-message {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 15px; /* Space between error message and input */
+}
+
+.adminlogin .login-button,
+.userlogin .login-button {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #b36f48;
+  color: white;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Rounded button */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.adminlogin .login-button:hover,
+.userlogin .login-button:hover {
+  background-color: #5d2f07; /* Darken the button on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.adminlogin .login-button:active,
+.userlogin .login-button:active {
+  transform: scale(0.98); /* Slightly reduce size when clicked */
+}
+
+  
+  

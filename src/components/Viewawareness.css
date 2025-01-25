@@ -1,0 +1,68 @@
+/* ViewAwareness.css */
+
+/* Container for the entire page */
+.view-awareness {
+    background-color: #f4f9f4; /* Soft light green background */
+    padding: 40px 0;
+  }
+  
+  /* Style the heading */
+  .view-awareness h1 {
+    color: #2d6a4f; /* Dark green for heading */
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  /* Centered container for the table */
+  .view-awareness .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Table styling */
+  .view-awareness table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .view-awareness th, .view-awareness td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .view-awareness th {
+    background-color: #2d6a4f; /* Dark green background for header */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .view-awareness td {
+    background-color: #e7f7e7; /* Light green for table rows */
+  }
+  
+  /* Message for empty table */
+  .view-awareness td[colspan="4"] {
+    color: #888; /* Gray color for the message */
+    font-size: 18px;
+    padding: 40px;
+  }
+  
+  /* Make the table responsive */
+  @media screen and (max-width: 768px) {
+    .view-awareness .container {
+      padding: 0 15px;
+    }
+  
+    .view-awareness table {
+      font-size: 14px;
+    }
+  
+    .view-awareness th, .view-awareness td {
+      padding: 10px;
+    }
+  }
+  
+  

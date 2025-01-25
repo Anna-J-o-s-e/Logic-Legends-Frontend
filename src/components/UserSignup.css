@@ -1,0 +1,75 @@
+
+/* Only apply styles on the signup page */
+.signup-page .eco-cup-signup {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .signup-page .container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Control Styling */
+  .signup-page .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space between fields */
+  }
+  
+  /* Placeholder Styling */
+  .signup-page .form-control::placeholder {
+    color: #136c1d; /* Green color */
+    font-style: italic; /* Italic font */
+    opacity: 0.6; /* Slightly faded */
+  }
+  
+  /* Label Styling */
+  .signup-page .form-label {
+    color: #136c1d; /* Green color for labels */
+    font-weight: 400; /* Less bold */
+    margin-bottom: 5px;
+    display: block; /* Ensure labels appear above inputs */
+  }
+  
+  /* Success Button Styling */
+  .signup-page .btn-success {
+    background-color: #136c1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Make the button a block element */
+    width: 200px; /* Set a specific width */
+    margin: 60px auto;
+    margin-left: 160px; /* Center the button */
+  }
+  
+  .signup-page .btn-success:hover {
+    background-color: #3eb34b;
+  }
+  
+  /* Link Styling */
+  .signup-page .link {
+    color: #136c1d;
+    text-decoration: none;
+    display: block;
+    text-align: center; /* Center the link */
+    margin-top: -50px; /* Space above the link */
+  }
+  
+  .signup-page .link:hover {
+    text-decoration: underline;
+  }
+  
+  

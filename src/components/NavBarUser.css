@@ -1,0 +1,84 @@
+/* NavBarUser.css */
+
+/* Scoped styles for the NavBarUser component */
+.navbar-user {
+    background: linear-gradient(135deg, #56ab2f, #8bc34a); /* Green gradient for eco-friendly look */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-user .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .navbar-user .logo h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-user .navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-user .navbar-links li {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .navbar-user .navbar-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .navbar-user .navbar-links a:hover {
+    color: #4b9a2f; /* Darker green color on hover */
+    transform: translateY(-3px);
+  }
+  
+  .navbar-user .navbar-links a:active {
+    color: #387c22; /* Even darker green for active state */
+  }
+  
+  .navbar-user .navbar-links li:last-child a {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-user .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-user .navbar-links {
+      flex-direction: column;
+      gap: 15px;
+      padding-left: 20px;
+    }
+  
+    .navbar-user .navbar-links li {
+      font-size: 1.2rem;
+    }
+  
+    .navbar-user .logo h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

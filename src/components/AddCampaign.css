@@ -1,0 +1,89 @@
+/* AddCampaign.css */
+
+/* Main wrapper for the AddCampaign page */
+.add-campaign {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #A8D08D, #8EBC6B); /* Soft green gradient */
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-size: cover;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-scraps.png'); /* Wood texture */
+}
+
+/* Heading styles */
+.add-campaign h1 {
+    font-size: 3rem;
+    color: #4E6C48; /* Earthy dark green */
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+/* Form container styling */
+.add-campaign .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Light white with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Green label styling */
+.add-campaign .form-label {
+    color: #4E6C48; /* Green color for labels */
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Form input fields */
+.add-campaign .form-control {
+    border: 1px solid #4E6C48; /* Green border for inputs */
+    background-color: #F9F9F9; /* Light beige background for inputs */
+    color: #4A4A4A; /* Dark text color */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Button styling */
+.add-campaign .btn-warning {
+    background-color: #6E9C6D; /* Soft green button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-campaign .btn-warning:hover {
+    background-color: #4E6C48; /* Darker green on hover */
+}
+
+/* Input and button styling for smaller devices */
+@media (max-width: 768px) {
+    .add-campaign h1 {
+        font-size: 2.5rem;
+    }
+
+    .add-campaign .form-label {
+        font-size: 0.9rem;
+    }
+
+    .add-campaign .form-control {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .add-campaign .btn-warning {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

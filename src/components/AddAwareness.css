@@ -1,0 +1,81 @@
+/* AddAwareness.css */
+
+/* Center the content */
+.add-awareness {
+    background-color: #f0f8f4; /* Light greenish background */
+    padding: 30px 0;
+  }
+  
+  /* Style the heading */
+  .add-awareness h1 {
+    color: #2d6a4f; /* Dark green for heading */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the form */
+  .add-awareness .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Form fields */
+  .add-awareness .form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d6a4f;
+  }
+  
+  /* Input fields */
+  .add-awareness .form-control {
+    border: 2px solid #2d6a4f;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .add-awareness .form-control:focus {
+    outline: none;
+    border-color: #4caf50; /* Focused border color */
+  }
+  
+  /* Submit button */
+  .add-awareness .btn-warning {
+    background-color: #4caf50; /* Greenish button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-awareness .btn-warning:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .add-awareness .container {
+      padding: 0 15px;
+    }
+    
+    .add-awareness .col-md-6 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Add a little shadow for the inputs */
+  .add-awareness .form-control {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button centered */
+  .add-awareness .btn-warning {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  

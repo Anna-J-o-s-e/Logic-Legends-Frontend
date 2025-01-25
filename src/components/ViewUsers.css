@@ -1,0 +1,98 @@
+/* ViewUsers.css */
+
+/* Main wrapper for the ViewUsers page */
+.view-users {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #A8D08D, #8EBC6B); /* Soft green gradient */
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-size: cover;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-scraps.png'); /* Wood texture */
+}
+
+/* Sticky Navbar */
+.view-users nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #4E6C48; /* Dark green for navbar */
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+.view-users h1 {
+    font-size: 3rem;
+    color: #4E6C48; /* Earthy dark green */
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Table styling */
+.view-users table {
+    width: 80%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.85); /* Light white with transparency */
+    padding: 40px;
+    backdrop-filter: blur(10px);
+}
+
+/* Table header */
+.view-users th {
+    background-color: #6E9C6D; /* Soft green */
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+/* Table body */
+.view-users td {
+    background-color: #F9F9F9; /* Light beige */
+    color: #4A4A4A;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* Hover effect for table rows */
+.view-users tbody tr:hover {
+    background-color: #E8F5E9; /* Light green on hover */
+    cursor: pointer;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .view-users h1 {
+        font-size: 2.5rem;
+    }
+
+    .view-users table {
+        font-size: 0.9rem;
+    }
+
+    .view-users th, .view-users td {
+        padding: 10px;
+    }
+}
+
+/* Optional footer with nature theme */
+.view-users footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6E9C6D;
+}
